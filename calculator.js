@@ -43,8 +43,6 @@ const evenOrOdd = function(a){
 }
 
 
-
-
 module.exports = { 
     sum, 
     subtract, 
