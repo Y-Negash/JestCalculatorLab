@@ -93,11 +93,23 @@ describe('modulus', () => {
     actual = modulus(-56, -3);
     expect(actual).toBe(expected);
   });
-  
+
 });
 
 describe('even', () => {
 
+  test('can be even', ()=> {
+    expected = true;
+    actual = even(20);
+    expect(actual).toBe(expected);
+  });
+
+  test('cannot be even', ()=> {
+    expected = false;
+    actual = even(21);
+    expect(actual).toBe(expected);
+  });
+  
 });
 
 describe('odd', () => {

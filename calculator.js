@@ -19,14 +19,18 @@ const modulus = function(a, b){
 }
 
 const even = function(a){
-    if(a >= 0){
+    if(a % 2 === 0){
         return true
-    } 
+    } else {
+        return false
+    }
 }
 
 const odd = function(a){
-    if(a < 0){
+    if(a % 2 !== 0){
         return false
+    } else {
+        return true
     }
 }
 
