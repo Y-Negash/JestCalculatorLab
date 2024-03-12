@@ -82,6 +82,18 @@ describe('divide', () => {
 
 describe('modulus', () => {
 
+  test('can find remainder of two positive numbers', ()=> {
+    expected = 0;
+    actual = modulus(32, 4);
+    expect(actual).toBe(expected);
+  });
+
+  test('can find remainder of two negative numbers', ()=> {
+    expected = -2;
+    actual = modulus(-56, -3);
+    expect(actual).toBe(expected);
+  });
+  
 });
 
 describe('even', () => {
