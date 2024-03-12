@@ -110,8 +110,32 @@ describe('even', () => {
     expect(actual).toBe(expected);
   });
   
+  test('can be even when number is negative', () => {
+    expected = true;
+    actual = even (-4);
+    expect(actual).toBe(expected);
+  });
+
 });
 
 describe('odd', () => {
+  
+  test('can be odd', ()=> {
+    expected = true;
+    actual = odd(23);
+    expect(actual).toBe(expected);
+  });
+
+  test('cannot be odd', ()=> {
+    expected = false;
+    actual = odd(20);
+    expect(actual).toBe(expected);
+  });
+
+  test('can be odd when number is negative', ()=> {
+    expected = true;
+    actual = odd(-5);
+    expect(actual).toBe(expected);
+  });
 
 });
