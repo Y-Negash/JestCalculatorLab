@@ -67,7 +67,17 @@ describe('multiply', () => {
 });
 
 describe('divide', () => {
+  test('can divide two positive numbers', ()=> {
+    expected = 4;
+    actual = divide(32, 8);
+    expect(actual).toBe(expected);
+  });
 
+  test('can divide two negative numbers', ()=> {
+    expected = 4;
+    actual = divide(-32, -8);
+    expect(actual).toBe(expected);
+  })
 });
 
 describe('modulus', () => {
