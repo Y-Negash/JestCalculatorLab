@@ -18,21 +18,32 @@ const modulus = function(a, b){
     return a % b;
 }
 
-const even = function(a){
+// const even = function(a){
+//     if(a % 2 === 0){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// const odd = function(a){
+//     if(a % 2 !== 0){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+const evenOrOdd = function(a){
     if(a % 2 === 0){
-        return true;
+        return "is even";
     } else {
-        return false;
+        return "is odd";
     }
 }
 
-const odd = function(a){
-    if(a % 2 !== 0){
-        return true;
-    } else {
-        return false;
-    }
-}
+
+
 
 module.exports = { 
     sum, 
@@ -40,6 +51,5 @@ module.exports = {
     multiply, 
     divide, 
     modulus, 
-    even, 
-    odd 
+    evenOrOdd
 };

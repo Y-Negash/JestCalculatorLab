@@ -6,6 +6,7 @@ const {
   modulus,
   even,
   odd,
+  evenOrOdd,
 } = require("./calculator");
 
 describe('sum', () => { 
@@ -99,20 +100,20 @@ describe('modulus', () => {
 describe('even', () => {
 
   test('can be even', ()=> {
-    expected = true;
-    actual = even(20);
+    expected = "is even";
+    actual = evenOrOdd(20);
     expect(actual).toBe(expected);
   });
 
   test('cannot be even', ()=> {
-    expected = false;
-    actual = even(21);
+    expected = "is odd";
+    actual = evenOrOdd(21);
     expect(actual).toBe(expected);
   });
   
   test('can be even when number is negative', () => {
-    expected = true;
-    actual = even (-4);
+    expected = "is even";
+    actual = evenOrOdd(-4);
     expect(actual).toBe(expected);
   });
 
@@ -121,20 +122,20 @@ describe('even', () => {
 describe('odd', () => {
   
   test('can be odd', ()=> {
-    expected = true;
-    actual = odd(23);
+    expected = "is odd";
+    actual = evenOrOdd(23);
     expect(actual).toBe(expected);
   });
 
   test('cannot be odd', ()=> {
-    expected = false;
-    actual = odd(20);
+    expected = "is even";
+    actual = evenOrOdd(20);
     expect(actual).toBe(expected);
   });
 
   test('can be odd when number is negative', ()=> {
-    expected = true;
-    actual = odd(-5);
+    expected = "is odd";
+    actual = evenOrOdd(-5);
     expect(actual).toBe(expected);
   });
 
